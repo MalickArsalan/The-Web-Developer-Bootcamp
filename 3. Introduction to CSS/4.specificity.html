@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Specificity</title>
+    <style type="text/css">
+        /* Inheritance -> Child will adopt the property from its parent */
+        /* ul{
+            color: purple;
+        } */
+        body{
+            color:red;
+        }
+        /* Inheritance */
+        /* Spceficity -> Either inherited from paren or not will adopt property that is assigned to it  */
+        /* p{
+            color: green
+        } */
+        ul{
+            color: blue;
+        }
+        li{
+            color: orangered;
+        }
+        .highlight{
+            color: yellow;
+        }
+        #special{
+            color:rgb(240, 107, 129);
+        }
+        /* Spceficity */
+    </style>
+</head>
+<body>
+    
+    <p>HELLO!!!</p>
+    <ul>
+        <li id="special" class="highlight">John</li>
+        <li>Paul</li>
+        <li>George</li>
+        <li class="highlight">Ring</li>
+    </ul>
+
+</body>
+</html>

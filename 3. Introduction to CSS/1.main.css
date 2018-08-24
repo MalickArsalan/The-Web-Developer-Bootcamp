@@ -1,0 +1,56 @@
+/* ====Color==== */
+/* h1{
+    color: red;
+}
+h4{
+    color: purple;
+}
+li{
+    color: green;
+} */
+
+/* HexaDecimal */
+/* h1{
+   color: #F408DD;
+} */
+
+/* RGB */
+/* h1{
+    color: rgb(209, 14, 14)
+} */
+
+/* RGBA */
+/* Just like RGB buth with an alpha(transparency) channel. Ranges from 0.0 - 1.0 */
+/* Through ALPHA you can make colors transparent */
+
+h1{
+    color: rgba(0, 200, 100, .65);
+    /* Border */
+    /*
+    width
+    color
+    style 
+    */
+    /* One Way */
+    /* border-color: purple;
+    border-width: 5px;
+    border-style: solid  */
+
+    /* Second Way */
+    border: 2px solid rgb(255, 100, 80);
+
+    /* Border */
+    
+}
+/* ====Color==== */
+/* ====Background Color==== */
+h4{
+    background: rgb(255, 100, 80)
+}
+body{
+    /* background:  url(https://pre00.deviantart.net/f3cd/th/pre/i/2011/121/8/a/drawn_wood_grain_texture_by_german_popsicle-d3fdjmd.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background: pink
+}
+/* ====Background Color==== */
