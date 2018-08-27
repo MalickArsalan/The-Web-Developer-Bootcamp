@@ -1,0 +1,53 @@
+Git Commands
+
+For Help
+1. git help
+
+For Configuration
+2. git config --global user.name "Malick Arsalan Office"
+3. git config --global user.email "malickarsalan@hotmail.com"
+4. git config --global color.ui true
+
+Starting A Repo
+1. mkdir "Dirctory Name"
+2. cd "Dirctory Name"
+3. git init
+// Initialized empty Git Repository in /Users/Malick.Arsalan/Directory Name/.git/
+// This is going to create a local Git Repo for us
+
+4. Git status
+// To check what is changed  since last commit
+// It also tells us that we are on branch master
+
+Add file to staging area
+5. git add "File or Directory Name"
+
+Commit changes
+6. git commit -m "Create a README" // you can write any thing to remind what you commit in double quote.
+
+Add more than one files to staging area
+7. git add file1 file2
+or 
+8. git add --all
+
+GIT Timeline History
+9. git log
+
+Different Ways to Add
+10. git add <list of files> //Add the list of files
+11. git add --all           //Add all files
+12. git add *.txt           //Add all txt files in current directory
+13. git add docs/*.txt      //Add all txt files in docs directory
+14. git add docs/           //Add all files in docs directory
+15. git add "*.txt"         //Add all text files in the whole project
+
+
+Test
+
+
+
+
+
+
+
+

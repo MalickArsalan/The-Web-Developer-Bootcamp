@@ -1,0 +1,87 @@
+Staging
+  
+1. git diff  
+// Show unstaged differences since last commit
+// "-" or Red line shows that this line has been removed
+// "+"  or Green line shows that this line has been added
+
+git add "file name"
+git diff  // No differences, since all changes are staged
+
+Viewing Staged Differences
+2. git diff --staged // view staged differences
+
+Unstaging Files
+3. git reset HEAD "File Name"
+// HEAD command refers to our last commit on the current branch or timeline that we are on
+
+Discard Changes
+4. git checkout -- "File name"  // Blow away all changes since last commit
+
+Skip Staging and Commit
+5. git commit -a -m "Commit Message" 
+// Add changes from all tracked files
+// Does not add new (untracked) files
+
+Undoing A Commit  -> Whoops, we forgot something on the commit.
+6. git reset --soft HEAD^
+// Reset into staging
+// Move to commit before head
+
+Useful Commands  -> Only can run below comand before pushed those commits
+7. git reset --soft HEAD^               // Roll back the last commit
+8. git commit -a -m "Commit Message"    // Add things to last commit
+9. git reset --hard HEAD^               // Undo last commit and all chang   // Blow away last commit
+10. git rest --hard HEAD^^              // Undo last 2 commits and all changes
+
+How to Share?
+
+"git remote" command is used to share it your work 
+NOTE: Git does not care of access control for you. for tthat you need additional software. For e.g.
+
+Remote Repository Hosting
+
+Hosted Solution
+1. GitHub
+2. GitBucket
+
+Self Managed Solution
+1. Gitosis
+2. Gitorious
+ 
+ Adding a Remote
+ 
+ 1. git remote add origin https://github.com/MalickArsalan/The-Web-Developer-Bootcamp.git
+ Add    -> New Remote
+ origin -> Our name for this remote
+ https://github.com/MalickArsalan/The-Web-Developer-Bootcamp.git -> Address
+ 2. git remote -v  // Show Remote Repository
+ 
+ Pushing To Remote
+ 
+ 1. git push -u origin master
+ origin -> remote repository name
+ master -> local branch to push
+-u      -> next time you run git push, you don't have specify the name and branch 
+           you can just run git push
+ 
+ Pulling Froom Remote
+ 1. git pull    // Pull down Changes from remote.
+                // It will pull the changes from remote, and sync up your local repository.
+
+ 
+Working With Remotes
+1. To Add New Remotes
+git  remote add <name> <address>
+
+2. To Remove Remotes
+git remote rm <name>
+
+3. To Push To Remotes
+git push -u <name> <branch>
+branch -> usally master
+
+
+HEROKU REMOTE
+
+ 

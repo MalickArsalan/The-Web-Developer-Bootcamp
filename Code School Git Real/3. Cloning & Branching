@@ -1,0 +1,19 @@
+Cloning A Repository
+
+1. git clone <URL> -> This will create a folder of the same name, that of your repo
+URL -> URL of the reote repository
+
+2. git clone <URL> <Folder Name>
+Folder Name -> the name that you want to set for local folder
+
+Git Clone -> What does Git Clone do?
+ 
+1. Download the entire repository into a new git-real directory.
+2. Adds the "origin" remote pointing it to the clone URL.
+3. Checks out initial branch(likely master). And Sets the HEAD
+
+
+Branching Out
+Need to work on a feature that will take a soem time
+Tie to Branch Out
+1.Git branch <Branch Name>
