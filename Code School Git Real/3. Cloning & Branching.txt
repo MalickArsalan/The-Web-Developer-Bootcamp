@@ -53,3 +53,8 @@ it'same very easu for Git to merge the cat branch back into master because nothi
 modified in the meantime.
 
 Branch Clean Up
+When you are done with the branch, you can safely remove it.
+7. git branch -d <Branch Name>
+
+Non-Fast-Forward
+
