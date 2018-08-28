@@ -8,12 +8,35 @@ Folder Name -> the name that you want to set for local folder
 
 Git Clone -> What does Git Clone do?
  
-1. Download the entire repository into a new git-real directory.
-2. Adds the "origin" remote pointing it to the clone URL.
-3. Checks out initial branch(likely master). And Sets the HEAD
+	a. Download the entire repository into a new git-real directory.
+	b. Adds the "origin" remote pointing it to the clone URL.
+	c. Checks out initial branch(likely master). And Sets the HEAD
 
 
 Branching Out
-Need to work on a feature that will take a soem time
-Tie to Branch Out
-1.Git branch <Branch Name>
+Need to work on a feature that will take a some time
+Time to Branch Out
+3.Git branch <Branch Name>
+
+
+Switching To A Branch
+Time to jump on that new 'office' branch.
+4. git checkout <branch Name>
+Now we switched to other branch
+
+Working On A Branch
+5. echo "Sample text" > cat.txt	// This will create a file and write follwoing text "Sample text"
+$ git commit -m "Create quantum cat."
+
+Note:	Now this commit will add to our new branch time line
+		$ ls -> here at new branch time line we can see "cat.txt" file
+
+Back To Master
+$ git checkout master
+$ ls 
+Note: Now in master time Line we can not see "cat.txt" through ls command
+$ git log 
+Note: Same you will not see "Quantum cat commit" there
+
+Time To Merge
+$ git checkout master 
