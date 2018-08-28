@@ -40,3 +40,16 @@ Note: Same you will not see "Quantum cat commit" there
 
 Time To Merge
 $ git checkout master 
+$ ls
+6. git merge <Branch Name> //merge brings one branch changes into another
+Following message will appear
+Message: Fast-Forward	-> 
+
+
+Fast-Forward To The Future
+Condtion to dast-forward merge
+* If we create a branch and make one commit or several and do nothing  on other branch
+it'same very easu for Git to merge the cat branch back into master because nothing was
+modified in the meantime.
+
+Branch Clean Up
