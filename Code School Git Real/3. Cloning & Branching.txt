@@ -83,4 +83,6 @@ h -> Left			:wq	-> save and quit
 l -> right			:q!	-> cancel & quit
 
 Recursive Merging
-GIt can't fast-forward since changes were made in both branches.
+* GIt can't fast-forward since changes were made in both branches.
+
+* A commit was created to merge the two branches. 
