@@ -1,7 +1,7 @@
 Cloning A Repository
 
 1. git clone <URL> -> This will create a folder of the same name, that of your repo
-URL -> URL of the reote repository
+URL -> URL of the remote repository
 
 2. git clone <URL> <Folder Name>
 Folder Name -> the name that you want to set for local folder
@@ -47,9 +47,9 @@ Message: Fast-Forward	->
 
 
 Fast-Forward To The Future
-Condtion to dast-forward merge
+Condition to fast-forward merge
 * If we create a branch and make one commit or several and do nothing  on other branch
-it'same very easu for Git to merge the cat branch back into master because nothing was
+it's very easy for Git to merge the cat branch back into master because nothing was
 modified in the meantime.
 
 Branch Clean Up
@@ -57,4 +57,30 @@ When you are done with the branch, you can safely remove it.
 7. git branch -d <Branch Name>
 
 Non-Fast-Forward
+8. git checkout -b admin
+// Switch to a new branch 'admin'
+-b -> Creates a branch and then check it out branch 
 
+Practice
+1. We add new folder and inside we create two files.
+2. separately commit both file.
+3. Meanwhile S1 occurs in master branch.
+4. checkout to master.
+5. verify if we are on same branch.
+6. pull latest master branch from remote repository.
+7. fix the issues. 
+8. commit the file.
+9. finally we push the changes back to remote master
+10. Now S1 is resolve move back to the branch where you left you latest work.
+11. go back to master and merge the branch on which you latest work has been done.
+12. Suddenly you will see some thing ugly or weired, don't panic!.
+13. It is just Vi, Git uses if no default editor is set to edit commit messages.
+
+Vi commands
+j -> Down			ESC -> leave mode
+k -> Up				i 	-> insert mode
+h -> Left			:wq	-> save and quit
+l -> right			:q!	-> cancel & quit
+
+Recursive Merging
+GIt can't fast-forward since changes were made in both branches.
