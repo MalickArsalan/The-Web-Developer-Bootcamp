@@ -1,0 +1,63 @@
+Collaboration Scenarios
+
+1. Person A -> Arsalan Push up his source code to GitHub
+2. Person B -> Talha wants the copy of same repository.
+3. Talha Copy his copy from GitHub an he wants to makes some changes.
+4. He adds two file.
+	a. UserBll.cs
+	b. ReportBll.cs
+5. After all Talha add and commit these two new files and pushes to remote repository
+6. Now at the same time Arsalan is working on ExportBll.cs
+7. Arsalan commit the file.
+8. Now there are two commits.
+	a. Arsalan Local commit.
+	b. Talha commits which is sitting up on GitHub.
+9. If Arsalan try to push. Well he's going to be rejected.
+   Because tip of his current branch is behind the remote branch 
+10. To resolve this first I need to pull from remote then push to remote
+
+Understanding PULL
+
+1. What is going under the hood when we run this pull command.
+	i.		first, it fetch (or Sync) our local repository with the remote.
+			It is the same thing as doing "git fetch" command.
+	ii.		Fetch does not actually update any of our local code.
+	iii.	In our local repo, we actually have a branch called origin/master.
+			That is our remote branch.
+	iv		Second, merges the origin/master with master. 
+			It is same thing as running "git merge origin/master".
+	Note:   Like you saw previous when we try to merge two different 
+			branches that have different commits, it's going to pop us 
+			straight into an editor Vi. Where we commit
+	
+	v.		After successfully committing it tell us that it did recursive merge.
+	vi.		But here origin/master does not yet know about Arsalan's changes
+			and about the merge commit, and it's not going to know about it until
+			we do git push.
+	vii.	Now origin/master is at same state as our local repo.
+	
+Merge Conflicts
+
+1. Arsalan and Talha  are working on the same code at the same time.
+2. this time, except this time they happen to be working on the same file, the same "Appraisal".
+3. Arsalan thinks that he performs very well and Talha thinks that Arsalan perform just an average.
+4. They both edited on same file.
+5. Talha commit the file and push on remote repository, Arsalan just committed locally. 
+6. Now what's going to happen now?
+7. Now Arsalan Pull from remote, using "git pull" which does the following.
+	a. It syncs the repository.
+	b. Pulls down the changes.
+	c. Pulls down Tahs's commit.
+	d. Tries to merge, but fail
+8. git status ->  
+9. Open "Appraisal.txt". We will see
+	a. Head -> Which is our local version.
+	b. Talha's version.
+10. We had to edit this file manually to fix it.
+11. $ git commit -a Note: we leave the message because it's going to boot us back into an editor.
+12. It'll give us a good commit message and even lists the conflicted files that we fixed.
+13. Merge Commit
+14.	push, and now once again, the origin/master syncs up with Arsalan local master  .
+ 
+
+
