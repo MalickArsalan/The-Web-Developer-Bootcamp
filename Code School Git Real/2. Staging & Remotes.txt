@@ -13,7 +13,7 @@ Viewing Staged Differences
 
 Unstaging Files
 3. git reset HEAD "File Name"
-// HEAD command refers to our last commit on the current branch or timeline that we are on
+// HEAD command refers to our last commit on the current branch or time line that we are on
 
 Discard Changes
 4. git checkout -- "File name"  // Blow away all changes since last commit
@@ -28,16 +28,16 @@ Undoing A Commit  -> Whoops, we forgot something on the commit.
 // Reset into staging
 // Move to commit before head
 
-Useful Commands  -> Only can run below comand before pushed those commits
+Useful Commands  -> Only can run below command before pushed those commits
 7. git reset --soft HEAD^               // Roll back the last commit
 8. git commit -a -m "Commit Message"    // Add things to last commit
-9. git reset --hard HEAD^               // Undo last commit and all chang   // Blow away last commit
+9. git reset --hard HEAD^               // Undo last commit and all change   // Blow away last commit
 10. git rest --hard HEAD^^              // Undo last 2 commits and all changes
 
 How to Share?
 
 "git remote" command is used to share it your work 
-NOTE: Git does not care of access control for you. for tthat you need additional software. For e.g.
+NOTE: Git does not care of access control for you. for that you need additional software. For e.g.
 
 Remote Repository Hosting
 
@@ -65,7 +65,7 @@ Self Managed Solution
 -u      -> next time you run git push, you don't have specify the name and branch 
            you can just run git push
  
- Pulling Froom Remote
+ Pulling From Remote
  1. git pull    // Pull down Changes from remote.
                 // It will pull the changes from remote, and sync up your local repository.
 
@@ -79,7 +79,7 @@ git remote rm <name>
 
 3. To Push To Remotes
 git push -u <name> <branch>
-branch -> usally master
+branch -> usually master
 
 
 HEROKU REMOTE
