@@ -1,0 +1,9 @@
+Remote Branches & Tags
+
+Why Create A Remote Branch?
+1. When you need other people to work on your branch.
+2. It is also a good practice, if you are working on a branch that is going to last longer then a day, 
+you might want to back it up, and you can do so by making it a remote branch and pushing it to GitHub.
+   
+   
+   
