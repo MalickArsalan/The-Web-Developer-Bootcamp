@@ -29,3 +29,24 @@ for (let x=1; x<=6;x+=1) {
     console.log(str);
     str="";
 }
+
+//3. Write a program that prints the numbers from 1 to 100. But for multiples 
+//   of three print “Fizz” instead of the number and for the multiples of five 
+//   print “Buzz”. For numbers which are multiples of both three and five 
+//   print “FizzBuzz”.
+
+for (let divis =1;divis<=100;divis++){
+    if (divis%5===0 && divis%3===0) {
+        console.log("FizzBuzz");   
+    }
+    else if(divis%3===0){
+        console.log("Fizz");   
+    }
+    else if(divis%5===0){
+        console.log("Buzz");   
+    }
+    else{
+        console.log(divis);
+    }
+    
+}
