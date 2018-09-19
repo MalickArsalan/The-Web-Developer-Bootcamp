@@ -12,15 +12,40 @@ let todos = [];
 
 let input = prompt("What would you like to do?");
 while (input!=="quit") {
-    if (input === "list") {
-        console.log(todos);
-    } else if (input === "list") {
-        //ask for new todo
-        let newTodo = prompt("Enter new todo");
-        //add to todos array
-        todos.push(newTodo);
+    // handle input
+    if (input === "list"){
+       listTodos();
+    } else if (input === "new") {
+        addTodos();
+    }else if (input === "delete"){
+        deleteTodos();
     }
     //ask again for new input
     input = prompt("What would you like to do?");
 }
 console.log("OK, YOU QUIT THE APP");
+
+function listTodos(){
+    console.log("**********");
+    todos.forEach(function(todo,index){
+        // todos.indexOf(todo) One option to acive Todo List Numbers
+        console.log(index+1 + ": " + todo);
+    });
+    console.log("**********");
+    // console.log(todos);   
+}
+function addTodos(){
+    //ask for new todo
+    let newTodo = prompt("Enter new todo");
+    //add to todos array
+    todos.push(newTodo);
+    console.log("Added Todo");
+}
+function deleteTodos(){
+    // ask for index to be deleted
+    let index = prompt("Enter index of Todo to delete");
+    // delete that todo
+    // splice()
+    todos.splice(index-1,1);
+    console.log("Deleted Todo");
+}
