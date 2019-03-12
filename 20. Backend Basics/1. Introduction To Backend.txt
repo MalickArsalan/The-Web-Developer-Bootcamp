@@ -1,0 +1,36 @@
+1. How Internet Works
+    a. When we enter url, like http://www.udemy.com/courses. There are few things that happened behind the scenes
+        i. Finding the Right Address
+            1. Your query is submitted to your ISP
+            2. Within your ISP, the DNS takes the Domain name and turns it into an IP address, which is the unique locator for Udemy server.
+
+        ii. Going to that Address
+            1. A request is sent to the desired IP address via HTTP.
+            2. Your request finds the fastest path possible path to the server with specefied IP.
+            3. This is not a direct journey. It requires hoping from server to server until we arrive.
+        
+        iii. Udemy Server Responds
+            1. The requested server figures out exactly what we are asking for(/courses)
+            2. The server builds us the right content, often pulling informationfrom database
+            3. The server responds with any combination of HTML, CSS, and JavaScript.
+            40And the... it gets to a browser whose job is to render the page.
+
+2. Static VS Dynamic Web Pages
+    a. Dynamic Web Pages
+        These are sites that are compiled on the server side where the server is pulling together or 
+        constructing a web page before it's sent back as a response.
+    
+3. A Generic Stack
+    Stack -> Stack is a term that's usedto refer to all of the technologies tha a particular web application uses.
+    FrontEnd Technologies ->  HTML, CSS and JavaScript.
+    BackEnd Technologies -> Different languages can be used to write server side codding such as:
+                                Ruby/Python/Scala/Java/JasvaScript/PHP  
+                            Differen databses out there.
+                                PostgreSQL/SQL/Mongo etc.
+
+
+ 4. Our Stack
+    BackEnd Technologies -> Node JS, Express(JavaScript Framework), MongoDB(DataBase)
+    FrontEnd Technologies -> HTML, CSS, JavaScript 
+
+
