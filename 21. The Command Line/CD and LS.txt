@@ -1,0 +1,7 @@
+Navigating Files and Folder 
+
+1. ls -> List
+    It just show me all the files and folders of current folder.
+
+2. CD -> Change Directories
+    cd "Name of the folder or directory" that we want to change into.
