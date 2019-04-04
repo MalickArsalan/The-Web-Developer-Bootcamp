@@ -1,0 +1,35 @@
+Navigating Files and Folder 
+
+1. ls -> List
+    It just show me all the files and folders of current folder.
+    Example:
+        ls
+        ls "Directory Name" -> Show list inside that directory
+
+2. cd -> Change Directories
+    cd "Name of the folder or directory" that we want to change into.
+    Example:
+        cd "20. Backend Basics"
+        cd .. -> To go one folder back
+
+
+3. touch -> Make New File
+    It will let us make a new file.
+    Example:
+        touch "orange.txt"
+
+4. mkdir -> Make New folder
+    It will let us make new folder.
+    Example:    
+        mkdir "FavColors"
+
+5. rm -> Remove a file
+    It will let us delete an individual file
+    Example:
+        rm "blue.txt"
+
+6. rm -rf -> Remove Recursive Force
+    It willlet us delete entire directory and its child elements
+    Example:
+        rm -rf "colors"
+    Note: Don't use this command on your computer root directory, it wil delete all from your computer
